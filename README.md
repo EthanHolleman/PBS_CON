@@ -7,7 +7,20 @@ Get yourself a clustal format multiple sequence alignment of your sequences. Thi
 ```
 python main.py -s 800 -e 1000 -m TGG -c ./GMR30_align
 ```
-Where `GMR30_align` is your multible sequence alignment. Run `main -h` for more info on what each on the arguements are.
+Where `GMR30_align` is your multible sequence alignment.
+
+### Help Menu
+```
+usage: main.py [-h] [-s S] [-e E] [-m M] [-c C] [-o O]
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -s S        Index in sequence to begin search
+  -e E        Index in sequence to end search
+  -m M        Starting motif
+  -c C        Path to clustal formated alignment file
+  -o O        Output path for png graph. Defauly = .
+  ```
 
 ## Output
 - Fasta file with top PBS consensus canidates
